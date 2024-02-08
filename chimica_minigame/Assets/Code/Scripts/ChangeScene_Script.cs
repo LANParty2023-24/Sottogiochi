@@ -30,4 +30,8 @@ public class ChangeScene_Script : MonoBehaviour
     public void changeScene(SCENE nextScene){
         SceneManager.LoadSceneAsync(nextScene.ToString());
     }
+
+    public void SetSceneLivingSeconds(int seconds){
+        SceneLivingSeconds=seconds;
+    }
 }
