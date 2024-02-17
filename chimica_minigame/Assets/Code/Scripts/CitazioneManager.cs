@@ -5,6 +5,7 @@ using TMPro;
 
 public class CitazioniManager : MonoBehaviour
 {
+    public float dilate;
     public Color main;
     public Color lightMain;
     public TextMeshProUGUI text;
@@ -42,6 +43,7 @@ public class CitazioniManager : MonoBehaviour
             currentQuote=(currentQuote+1)%QUOTES.Length;
             changeText();
         }
+        //this.GetComponent<TMPro.TextMeshProUGUI>().fontMaterial.SetFloat(TMPro.ShaderUtilities.ID_FaceDilate, dilate);
         FlashingText();
     }
 
